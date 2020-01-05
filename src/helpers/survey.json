@@ -1,0 +1,573 @@
+{
+  "completeText": "Finish",
+  "pageNextText": "Continue",
+  "pagePrevText": "Previous",
+  "pages": [
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "color",
+          "title": "What color do you like your dress to have?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "white", "text": "White / Off White" },
+            { "value": "ivory", "text": "Ivory" },
+            { "value": "pink", "text": "Pink / Blush" },
+            { "value": "black", "text": "Black" },
+            { "value": "red", "text": "Red" },
+            { "value": "others", "text": "Other Colors" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "silhouette",
+          "useDisplayValuesInTitle": false,
+          "title": "What silhouette are you looking for?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "titleLocation": "top",
+          "choices": [
+            { "value": "fit-and-flare", "text": "Fit & Flare" },
+            { "value": "a-line", "text": "A-Line" },
+            { "value": "sheath", "text": "Sheath" },
+            { "value": "ballgown", "text": "Ballgown" },
+            { "value": "short", "text": "Short" },
+            { "value": "tea", "text": "Tea" },
+            { "value": "hi-low", "text": "Hi-Low" }
+          ],
+          "choicesOrder": "random",
+          "showLabel": true
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "volume",
+          "title": "How much volume do you want your skirt to have?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            {
+              "value": "standard",
+              "text": "Standard",
+              "visibleIf": "{silhouette} = \"ballgown\""
+            },
+            {
+              "value": "exaggerated",
+              "text": "Exaggerated",
+              "visibleIf": "{silhouette} = \"ballgown\""
+            },
+            {
+              "value": "horsehair",
+              "text": "Horsehair",
+              "visibleIf": "{silhouette} = \"ballgown\""
+            },
+            {
+              "value": "subtle",
+              "text": "Subtle",
+              "visibleIf": "{silhouette} = \"fit-and-flare\""
+            },
+            {
+              "value": "moderate",
+              "text": "Moderate",
+              "visibleIf": "{silhouette} = \"fit-and-flare\""
+            },
+            {
+              "value": "dramatic",
+              "text": "Dramatic",
+              "visibleIf": "{silhouette} = \"fit-and-flare\""
+            },
+            {
+              "value": "circle",
+              "text": "Circle",
+              "visibleIf": "{silhouette} = \"short\" or {silhouette} = \"tea\""
+            },
+            {
+              "value": "sheath",
+              "text": "Sheath",
+              "visibleIf": "{silhouette} = \"short\" or {silhouette} = \"tea\""
+            }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "skirt_fabric",
+          "title": "What type of fabric do you like for your skirt?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "lace_tulle", "text": "Lace & Tulle" },
+            { "value": "light", "text": "Light & Structured" },
+            { "value": "heavy", "text": "Heavy & Structured" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "lace",
+          "title": "Do you want lace on your skirt?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "skirt_lace_pattern",
+          "title": "What kind of lace do you like?",
+          "enableIf": "{lace} = 'yes'",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "floral", "text": "Floral" },
+            { "value": "geometric", "text": "Geometric" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "skirt_lace_type",
+          "title": "How do you envision the lace on the skirt?",
+          "enableIf": "{lace} = 'yes'",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "gradient", "text": "Gradient" },
+            { "value": "all_over", "text": "All Over" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "beading_sparkle",
+          "title": "Do you like beading or sparkle on your skirt?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "train",
+          "title": "How do you think about a train for your dress?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "court", "text": "Court" },
+            { "value": "sweep", "text": "Sweep" },
+            { "value": "chapel", "text": "Chapel" },
+            { "value": "none", "text": "No Train" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "detachable_train",
+          "title": "Do you want a detachable train?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "pocket",
+          "title": "Do you want your dress to have pocket?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "bodice_corset",
+          "title": "Do you like a corset-shaped bodice?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "bodice_illusion",
+          "title": "Does the bodice of your dress have illusion?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "neckline_shape",
+          "title": "What is the shape of the neckline?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "boatneck", "text": "Boatneck" },
+            { "value": "v-neck", "text": "V-Neck" },
+            { "value": "crew_neck", "text": "Crew Neck" },
+            { "value": "off-the-shoulder", "text": "Off-the-shoulder" },
+            { "value": "halter", "text": "Halter" },
+            { "value": "scoop_neck", "text": "Scoop Neck" },
+            { "value": "high_neck", "text": "High Neck" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "neckline_front",
+          "title": "How about the solid portion of your front neckline?",
+          "enableIf": "{bodice_illusion} = \"yes\"",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "sweetheart", "text": "Sweetheart" },
+            { "value": "v-shaped", "text": "V-Shaped" },
+            { "value": "straight", "text": "Straight" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "bodice_lace",
+          "title": "Do you want lace on your bodice?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "bodice_beading",
+          "title": "How about beading or sparkle on your bodice?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "sleeve",
+          "title": "Do you want a sleeve for your dress?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "yes", "text": "Yes" },
+            { "value": "no", "text": "No" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "sleeve_length",
+          "title": "How long do you want your sleeve to be?",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "cap", "text": "Cap" },
+            { "value": "short", "text": "Short" },
+            { "value": "elbow", "text": "Elbow" },
+            { "value": "3-4_length", "text": "3/4 Length" },
+            { "value": "long", "text": "Long" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "elements": [
+        {
+          "type": "imagepicker",
+          "name": "dress_liner",
+          "title": "Do you the back of your dress to be lined or outlined",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "answercount",
+              "text": "Please select a type",
+              "minCount": 1,
+              "maxCount": 1
+            }
+          ],
+          "choices": [
+            { "value": "lined", "text": "Lined" },
+            { "value": "outlined", "text": "Outlined" }
+          ],
+          "choicesOrder": "random"
+        }
+      ]
+    }
+  ],
+  "triggers": [
+    {
+      "type": "skip",
+      "expression": "{lace} = \"yes\"",
+      "gotoName": "skirt_lace_pattern"
+    },
+    { "type": "skip", "gotoName": "beading_sparkle" },
+    {
+      "type": "skip",
+      "expression": "{lace} = \"no\"",
+      "gotoName": "beading_sparkle"
+    },
+    {
+      "type": "skip",
+      "expression": "{silhouette} = \"a-line\"",
+      "gotoName": "skirt_fabric"
+    }
+  ],
+  "goNextPageAutomatic": true,
+  "firstPageIsStarted": true
+}
