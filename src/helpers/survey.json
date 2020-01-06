@@ -4,6 +4,10 @@
   "pagePrevText": "Previous",
   "pages": [
     {
+      "name": "start",
+      "elements": []
+    },
+    {
       "name": "",
       "elements": [
         {

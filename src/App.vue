@@ -7,6 +7,18 @@
     <router-view />
   </div>
 </template>
+<script>
+import store from "@/store";
+import router from "@/router";
+import { provideRouter, provideStore } from "@/helpers/injectors";
+
+export default {
+  setup() {
+    provideRouter(router);
+    provideStore(store);
+  }
+};
+</script>
 
 <style>
 #app {

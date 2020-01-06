@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <div id="surveyContainer"><survey :survey="surveyModel"></survey></div>
+    <div>{{ surveyResult }}</div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import * as SurveyVue from "survey-vue";
+import surveyJSON from "@/helpers/survey.json";
+import { ref } from "@vue/composition-api";
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
-    HelloWorld
+    survey: SurveyVue.Survey
+  },
+  setup() {
+    // eslint-disable-next-line
+    const surveyModel = ref(new SurveyVue.Model(surveyJSON));
+    const surveyResult = ref({});
+
+    surveyModel.value.onComplete.add(result => {
+      surveyResult.value = result.data;
+    });
+
+    return {
+      surveyModel,
+      surveyResult
+    };
   }
 };
 </script>

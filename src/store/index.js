@@ -4,8 +4,14 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    counter: 0
+  },
+  mutations: {
+    INCREMENT(state) {
+      state.counter++;
+    }
+  },
   actions: {},
   modules: {}
 });
