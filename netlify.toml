@@ -1,0 +1,4 @@
+[build]
+    functions = "functions-dist"
+    publish = "dist"
+    command = "yarn build:functions && yarn build"
