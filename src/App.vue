@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
+      <router-link to="/surveys">Survey</router-link> |
+      <router-link to="/images">Images</router-link> |
       <template v-if="isLoggedIn">
         Hello {{ username }}.
         <a href="#" @click="triggerNetlifyIdentityAction('logout')">
