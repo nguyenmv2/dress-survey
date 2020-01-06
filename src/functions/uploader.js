@@ -12,7 +12,8 @@ exports.handler = async (event, context) => {
   const { S3_AWS_ACCESS_KEY_ID, S3_AWS_SECRET_ACCESS_KEY } = process.env;
   const s3 = new AWS.S3({
     accessKeyId: S3_AWS_ACCESS_KEY_ID,
-    secretAccessKey: S3_AWS_SECRET_ACCESS_KEY
+    secretAccessKey: S3_AWS_SECRET_ACCESS_KEY,
+    region: "us-east-2"
   });
   const params = JSON.parse(event.body);
 
