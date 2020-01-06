@@ -5,11 +5,14 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    counter: 0
+    user: null
+  },
+  getters: {
+    user: state => state.user
   },
   mutations: {
-    INCREMENT(state) {
-      state.counter++;
+    SET_CURRENT_USER(state, user) {
+      state.user = user;
     }
   },
   actions: {},
