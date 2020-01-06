@@ -21,12 +21,6 @@ const routes = [
     name: "images",
     component: () =>
       import(/* webpackChunkName: "images" */ "../views/Images.vue")
-  },
-  {
-    path: "/uploader",
-    name: "uploader",
-    component: () =>
-      import(/* webpackChunkName: "uploader" */ "../views/Uploader.vue")
   }
 ];
 
