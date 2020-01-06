@@ -33,6 +33,10 @@ export default {
         APIUrl: "https://dreamy-pike-d1c90a.netlify.com/.netlify/identity",
         logo: true
       });
+      const loggedInUser = netlifyIdentity.currentUser();
+      if (loggedInUser) {
+        store.commit("SET_CURRENT_USER", toUserObj(loggedInUser));
+      }
     });
     provideRouter(router);
     provideStore(store);

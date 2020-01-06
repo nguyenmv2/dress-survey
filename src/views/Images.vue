@@ -6,12 +6,13 @@
         <input id="files" type="file" multiple @change="onFileSelect" />
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          :disabled="submitting"
         >
-          Submit
+          {{ submitting ? "Submiting" : "Submit" }}
         </button>
       </form>
     </div>
-    <div class="flex flex-1 flex-wrap">
+    <div v-show="!loading" class="flex flex-1 flex-wrap">
       <div
         v-for="(image, idx) in images"
         :key="idx"
@@ -33,6 +34,9 @@
         </button>
       </div>
     </div>
+    <div v-show="loading">
+      Loading
+    </div>
   </div>
 </template>
 <script>
@@ -47,9 +51,14 @@ export default {
     const user = computed(() => store.getters.user);
     const images = ref([]);
     const files = ref([]);
+    const loading = ref(false);
+    const submitting = ref(false);
+
     async function fetchImages() {
+      loading.value = true;
       const { data } = await axios.get("/.netlify/functions/get-images");
       images.value = data;
+      loading.value = false;
     }
     onBeforeMount(() => {
       fetchImages();
@@ -78,30 +87,43 @@ export default {
     }
 
     async function upload() {
-      let promises = [];
-      for (let i = 0; i < files.value.length; i++) {
-        const file = files.value[i];
-        promises.push(
-          new Promise(resolve => {
-            presignedPut(file.name, file.type).then(({ data }) => {
-              const { uploadURL } = data;
-              axios
-                .put(uploadURL, file, {
-                  headers: { "Content-Type": file.type }
-                })
-                .then(() => {
-                  resolve();
-                });
-            });
-          })
-        );
+      if (!user.value) {
+        alert("Must login before doing this");
+        return;
       }
-      await Promise.all(promises);
-      fetchImages();
-      document.getElementById("fileForm").reset();
+      submitting.value = true;
+      try {
+        let promises = [];
+        for (let i = 0; i < files.value.length; i++) {
+          const file = files.value[i];
+          promises.push(
+            new Promise(resolve => {
+              presignedPut(file.name, file.type).then(({ data }) => {
+                const { uploadURL } = data;
+                axios
+                  .put(uploadURL, file, {
+                    headers: { "Content-Type": file.type }
+                  })
+                  .then(() => {
+                    resolve();
+                  });
+              });
+            })
+          );
+        }
+        await Promise.all(promises);
+        fetchImages();
+        document.getElementById("fileForm").reset();
+      } finally {
+        submitting.value = false;
+      }
     }
 
     async function deleteImg(img) {
+      if (!user.value) {
+        alert("Must login before doing this");
+        return;
+      }
       if (!window.confirm("Are you sure?")) return;
       const imgName = `public${new URL(img).pathname}`;
       // eslint-disable-next-line
@@ -121,6 +143,8 @@ export default {
       images,
       files,
       user,
+      loading,
+      submitting,
       toFilename,
       upload,
       onFileSelect,
