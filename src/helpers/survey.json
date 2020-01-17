@@ -613,6 +613,7 @@
           "name": "neckline_front",
           "title": "How about the solid portion of your front neckline?",
           "enableIf": "{bodice_illusion} = \"yes\"",
+          "visibleIf": "{bodice_illusion} = \"yes\"",
           "isRequired": true,
           "validators": [
             {

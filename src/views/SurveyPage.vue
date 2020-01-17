@@ -64,7 +64,7 @@ export default {
         requiredText: "sv_q_required_text",
         comment: "form-control",
         required: "4",
-        titleRequired: "py-8 font-sans font-semibold",
+        titleRequired: "py-8 font-serif font-semibold",
         hasError: "has-error",
         indent: 20,
         formGroup: "form-group"
@@ -84,7 +84,7 @@ export default {
         label: "sv_q_imgsel_label",
         itemControl: "sv_q_imgsel_control_item",
         image: "sv_q_imgsel_image",
-        itemText: "sv_q_imgsel_text",
+        itemText: "sv_q_imgsel_text font-sans font-semibold",
         clearButton: "sv_q_radiogroup_clear"
       },
       window: {
