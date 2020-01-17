@@ -119,6 +119,7 @@ export default {
 }
 .sv_qstn .sv_q_imgsel label > div {
   @apply flex flex-col flex-grow border-4 border-blue-light relative;
+  @apply p-0 !important;
 }
 .checked label > div {
   @apply border-2 border-blue !important;
@@ -129,9 +130,23 @@ export default {
   background-image: url("../assets/icons/check-mark.svg");
   background-size: 24px 24px;
   height: 24px;
-  width: 24px;
+  width: 30px;
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
+}
+.checked label > div::after {
+  content: " ";
+  display: block;
+  background-image: linear-gradient(
+    0deg,
+    rgba(85, 110, 142, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.25;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  @apply h-full w-full;
 }
 </style>
