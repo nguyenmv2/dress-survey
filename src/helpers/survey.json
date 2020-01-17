@@ -1,14 +1,7 @@
 {
-  "completeText": "Finish",
-  "pageNextText": "Continue",
-  "pagePrevText": "Previous",
   "pages": [
     {
-      "name": "start",
-      "elements": []
-    },
-    {
-      "name": "",
+      "name": "page1",
       "elements": [
         {
           "type": "imagepicker",
@@ -24,19 +17,49 @@
             }
           ],
           "choices": [
-            { "value": "white", "text": "White / Off White" },
-            { "value": "ivory", "text": "Ivory" },
-            { "value": "pink", "text": "Pink / Blush" },
-            { "value": "black", "text": "Black" },
-            { "value": "red", "text": "Red" },
-            { "value": "others", "text": "Other Colors" }
+            {
+              "value": "white",
+              "text": "White / Off White",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/74158180_713449875833670_4475923077158404096_o.jpg"
+            },
+            {
+              "value": "ivory",
+              "text": "Ivory",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/ivory.jpg"
+            },
+            {
+              "value": "pink",
+              "text": "Pink / Blush",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/73458862_713449239167067_5527568458356621312_o.jpg"
+            },
+            {
+              "value": "black",
+              "text": "Black",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/black-dress.jpg"
+            },
+            {
+              "value": "red",
+              "text": "Red",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/red-dress.jpg"
+            },
+            {
+              "value": "others",
+              "text": "Other Colors",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/othercolor.jpg"
+            },
+            {
+              "value": "ombre",
+              "text": "Ombre",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/OMBRECOLOR.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page2",
       "elements": [
         {
           "type": "imagepicker",
@@ -54,21 +77,49 @@
           ],
           "titleLocation": "top",
           "choices": [
-            { "value": "fit-and-flare", "text": "Fit & Flare" },
-            { "value": "a-line", "text": "A-Line" },
-            { "value": "sheath", "text": "Sheath" },
-            { "value": "ballgown", "text": "Ballgown" },
-            { "value": "short", "text": "Short" },
-            { "value": "tea", "text": "Tea" },
-            { "value": "hi-low", "text": "Hi-Low" }
+            {
+              "value": "fit-and-flare",
+              "text": "Fit & Flare",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/72045602_693502654495059_3553695669157888000_o.jpg"
+            },
+            {
+              "value": "a-line",
+              "text": "A-Line",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/57486037_588889224956403_8350820826190184448_o.jpg"
+            },
+            {
+              "value": "sheath",
+              "text": "Sheath",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/Ameryllis.jpg"
+            },
+            {
+              "value": "ballgown",
+              "text": "Ballgown",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/71272881_693489741163017_4396557042215550976_o.jpg"
+            },
+            {
+              "value": "short",
+              "text": "Short",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/short-circle.jpg"
+            },
+            {
+              "value": "tea",
+              "text": "Tea",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/teadress.jpg"
+            },
+            {
+              "value": "hi-low",
+              "text": "Hi-Low",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/hi-low.jpg"
+            }
           ],
-          "choicesOrder": "random",
+          "choicesOrder": "ascending",
           "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page3",
       "elements": [
         {
           "type": "imagepicker",
@@ -87,51 +138,83 @@
             {
               "value": "standard",
               "text": "Standard",
-              "visibleIf": "{silhouette} = \"ballgown\""
+              "visibleIf": "{silhouette} = \"ballgown\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/ballgown-standard.jpg"
             },
             {
               "value": "exaggerated",
               "text": "Exaggerated",
-              "visibleIf": "{silhouette} = \"ballgown\""
+              "visibleIf": "{silhouette} = \"ballgown\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/ballgown-exaggerated.jpg"
             },
             {
               "value": "horsehair",
               "text": "Horsehair",
-              "visibleIf": "{silhouette} = \"ballgown\""
+              "visibleIf": "{silhouette} = \"ballgown\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/horsehair.jpg"
             },
             {
               "value": "subtle",
               "text": "Subtle",
-              "visibleIf": "{silhouette} = \"fit-and-flare\""
+              "visibleIf": "{silhouette} = \"fit-and-flare\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/fit&flare-subtle.jpg"
             },
             {
               "value": "moderate",
               "text": "Moderate",
-              "visibleIf": "{silhouette} = \"fit-and-flare\""
+              "visibleIf": "{silhouette} = \"fit-and-flare\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/fit&flare-moderate.jpg"
             },
             {
               "value": "dramatic",
               "text": "Dramatic",
-              "visibleIf": "{silhouette} = \"fit-and-flare\""
+              "visibleIf": "{silhouette} = \"fit-and-flare\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/fit&flare-dramatic.jpg"
             },
             {
-              "value": "circle",
+              "value": "short_circle",
               "text": "Circle",
-              "visibleIf": "{silhouette} = \"short\" or {silhouette} = \"tea\""
+              "visibleIf": "{silhouette} = \"short\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/short-circle.jpg"
             },
             {
-              "value": "sheath",
-              "text": "Sheath",
-              "visibleIf": "{silhouette} = \"short\" or {silhouette} = \"tea\""
+              "value": "short_tier",
+              "text": "Tier",
+              "visibleIf": "{silhouette} = \"short\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/tiershort.jpg"
+            },
+            {
+              "value": "tea_circle",
+              "text": "Circle",
+              "visibleIf": "{silhouette} = \"tea\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/teadress.jpg"
+            },
+            {
+              "value": "tea_tier",
+              "text": "Tier",
+              "visibleIf": "{silhouette} = \"tea\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/tiertealength.jpg"
+            },
+            {
+              "value": "sheath_std",
+              "text": "Standard",
+              "visibleIf": "{silhouette} = \"sheath\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sheath-standard.jpg"
+            },
+            {
+              "value": "sheath_tier",
+              "text": "Tier",
+              "visibleIf": "{silhouette} = \"sheath\"",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sheath%20tier.jpg"
             }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
-
+      "name": "page4",
       "elements": [
         {
           "type": "imagepicker",
@@ -147,16 +230,29 @@
             }
           ],
           "choices": [
-            { "value": "lace_tulle", "text": "Lace & Tulle" },
-            { "value": "light", "text": "Light & Structured" },
-            { "value": "heavy", "text": "Heavy & Structured" }
+            {
+              "value": "lace_tulle",
+              "text": "Lace & Tulle",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/Daisy2.jpg"
+            },
+            {
+              "value": "light",
+              "text": "Light & Structured",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/BOP.jpg"
+            },
+            {
+              "value": "heavy",
+              "text": "Heavy & Structured",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/72737784_701806040331387_2330769702319554560_o.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page5",
       "elements": [
         {
           "type": "imagepicker",
@@ -172,15 +268,24 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes",
+              "text": "Yes",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sheath-alloverlace.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/ballgown-standard.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page6",
       "elements": [
         {
           "type": "imagepicker",
@@ -197,15 +302,24 @@
             }
           ],
           "choices": [
-            { "value": "floral", "text": "Floral" },
-            { "value": "geometric", "text": "Geometric" }
+            {
+              "value": "floral",
+              "text": "Floral",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/ballgown-exaggerated.jpg"
+            },
+            {
+              "value": "geometric",
+              "text": "Geometric",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/geometric%20(1).jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page7",
       "elements": [
         {
           "type": "imagepicker",
@@ -222,15 +336,24 @@
             }
           ],
           "choices": [
-            { "value": "gradient", "text": "Gradient" },
-            { "value": "all_over", "text": "All Over" }
+            {
+              "value": "gradient",
+              "text": "Gradient",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/A-line-gradient.jpg"
+            },
+            {
+              "value": "all_over",
+              "text": "All Over",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sheath-alloverlace.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page8",
       "elements": [
         {
           "type": "imagepicker",
@@ -246,15 +369,29 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes_lace&beading",
+              "text": "Yes (with lace)",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/beaded-sparkle-skirt.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/magnolia04.jpg"
+            },
+            {
+              "value": "yes_beadingonly",
+              "text": "Yes (on satin)",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/SATINBEADEDSKIRT.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page9",
       "elements": [
         {
           "type": "imagepicker",
@@ -270,17 +407,39 @@
             }
           ],
           "choices": [
-            { "value": "court", "text": "Court" },
-            { "value": "sweep", "text": "Sweep" },
-            { "value": "chapel", "text": "Chapel" },
-            { "value": "none", "text": "No Train" }
+            {
+              "value": "court",
+              "text": "Court",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/pinkdress.jpg"
+            },
+            {
+              "value": "sweep",
+              "text": "Sweep",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sweeptrain.jpg"
+            },
+            {
+              "value": "chapel",
+              "text": "Chapel",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/detachable-train-chapel.jpg"
+            },
+            {
+              "value": "none",
+              "text": "No Train",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/notrain.jpg"
+            },
+            {
+              "value": "cathedral",
+              "text": "Cathedral",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/cathedraltrain.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page10",
       "elements": [
         {
           "type": "imagepicker",
@@ -296,15 +455,24 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes",
+              "text": "Yes",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/detachable-train-chapel.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/beaded-flower.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page11",
       "elements": [
         {
           "type": "imagepicker",
@@ -320,39 +488,24 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
-          ],
-          "choicesOrder": "random"
-        }
-      ]
-    },
-    {
-      "name": "",
-      "elements": [
-        {
-          "type": "imagepicker",
-          "name": "bodice_corset",
-          "title": "Do you like a corset-shaped bodice?",
-          "isRequired": true,
-          "validators": [
             {
-              "type": "answercount",
-              "text": "Please select a type",
-              "minCount": 1,
-              "maxCount": 1
+              "value": "yes",
+              "text": "Yes",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/pocket.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sheath-nolace.jpg"
             }
           ],
-          "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
-          ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page13",
       "elements": [
         {
           "type": "imagepicker",
@@ -368,15 +521,24 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes",
+              "text": "Yes",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/illusion%20neckline.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/strapless.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page14",
       "elements": [
         {
           "type": "imagepicker",
@@ -392,20 +554,59 @@
             }
           ],
           "choices": [
-            { "value": "boatneck", "text": "Boatneck" },
-            { "value": "v-neck", "text": "V-Neck" },
-            { "value": "crew_neck", "text": "Crew Neck" },
-            { "value": "off-the-shoulder", "text": "Off-the-shoulder" },
-            { "value": "halter", "text": "Halter" },
-            { "value": "scoop_neck", "text": "Scoop Neck" },
-            { "value": "high_neck", "text": "High Neck" }
+            {
+              "value": "boatneck",
+              "text": "Boatneck",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/shortsleeve-boatneck.jpg"
+            },
+            {
+              "value": "v-neck",
+              "text": "V-Neck",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/teacircle.jpg"
+            },
+            {
+              "value": "crew_neck",
+              "text": "Crew Neck",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/teadress.jpg"
+            },
+            {
+              "value": "off-the-shoulder",
+              "text": "Off-the-shoulder",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/offtheshoulder.jpg"
+            },
+            {
+              "value": "halter",
+              "text": "Halter",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/halter.jpg"
+            },
+            {
+              "value": "scoop_neck",
+              "text": "Scoop Neck",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/scoopneck.jpg"
+            },
+            {
+              "value": "high_neck",
+              "text": "High Neck",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/highneck.jpg"
+            },
+            {
+              "value": "spaghetti_strap",
+              "text": "Spaghetti Strap",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/spaghettistrap.jpg"
+            },
+            {
+              "value": "strapless",
+              "text": "Strapless",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/sweetheart.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page15",
       "elements": [
         {
           "type": "imagepicker",
@@ -422,16 +623,29 @@
             }
           ],
           "choices": [
-            { "value": "sweetheart", "text": "Sweetheart" },
-            { "value": "v-shaped", "text": "V-Shaped" },
-            { "value": "straight", "text": "Straight" }
+            {
+              "value": "sweetheart",
+              "text": "Sweetheart",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/illusion-neckline.jpg"
+            },
+            {
+              "value": "v-shaped",
+              "text": "V-Shaped",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/Vshape-illusion.jpg"
+            },
+            {
+              "value": "straight",
+              "text": "Straight",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/illusionstraight.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page16",
       "elements": [
         {
           "type": "imagepicker",
@@ -447,15 +661,24 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes",
+              "text": "Yes",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/illusion-neckline.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/strapless.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page17",
       "elements": [
         {
           "type": "imagepicker",
@@ -471,15 +694,29 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes_onlybeading",
+              "text": "Yes (only beading/sparkle)",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/beadingbodice.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/nobeading.jpg"
+            },
+            {
+              "value": "yes_withlace",
+              "text": "Yes (with lace)",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/lacebeading.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page18",
       "elements": [
         {
           "type": "imagepicker",
@@ -495,15 +732,23 @@
             }
           ],
           "choices": [
-            { "value": "yes", "text": "Yes" },
-            { "value": "no", "text": "No" }
+            {
+              "value": "yes",
+              "text": "Yes",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/Coreopsis02.jpg"
+            },
+            {
+              "value": "no",
+              "text": "No",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/no-sleeve.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "asc"
         }
       ]
     },
     {
-      "name": "",
+      "name": "page19",
       "elements": [
         {
           "type": "imagepicker",
@@ -519,18 +764,44 @@
             }
           ],
           "choices": [
-            { "value": "cap", "text": "Cap" },
-            { "value": "short", "text": "Short" },
-            { "value": "elbow", "text": "Elbow" },
-            { "value": "3-4_length", "text": "3/4 Length" },
-            { "value": "long", "text": "Long" }
+            {
+              "value": "cap",
+              "text": "Cap",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/capslleeve.jpg"
+            },
+            {
+              "value": "short",
+              "text": "Short",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/shortsleeve.jpg"
+            },
+            {
+              "value": "elbow",
+              "text": "Elbow",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/elbow.jpg"
+            },
+            {
+              "value": "3-4_length",
+              "text": "3/4 Length",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/3-4-length.jpg"
+            },
+            {
+              "value": "long",
+              "text": "Long",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/highneck.jpg"
+            },
+            {
+              "value": "puff_sleeve",
+              "text": "Puff Sleeve",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/puffsleave.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     },
     {
-      "name": "",
+      "name": "page20",
       "elements": [
         {
           "type": "imagepicker",
@@ -546,10 +817,19 @@
             }
           ],
           "choices": [
-            { "value": "lined", "text": "Lined" },
-            { "value": "outlined", "text": "Outlined" }
+            {
+              "value": "lined",
+              "text": "Lined",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/linedback.jpg"
+            },
+            {
+              "value": "outlined",
+              "text": "Outlined",
+              "imageLink": "https://assets.bluetagbridal.com/surveys/unlined%20back.jpg"
+            }
           ],
-          "choicesOrder": "random"
+          "choicesOrder": "ascending",
+          "showLabel": true
         }
       ]
     }
@@ -560,7 +840,10 @@
       "expression": "{lace} = \"yes\"",
       "gotoName": "skirt_lace_pattern"
     },
-    { "type": "skip", "gotoName": "beading_sparkle" },
+    {
+      "type": "skip",
+      "gotoName": "beading_sparkle"
+    },
     {
       "type": "skip",
       "expression": "{lace} = \"no\"",
@@ -572,6 +855,9 @@
       "gotoName": "skirt_fabric"
     }
   ],
-  "goNextPageAutomatic": true,
+  "goNextPageAutomatic": false,
+  "pagePrevText": "Previous",
+  "pageNextText": "Continue",
+  "completeText": "Finish",
   "firstPageIsStarted": true
 }

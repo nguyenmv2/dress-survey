@@ -3,8 +3,8 @@ import VueCompositionApi from "@vue/composition-api";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import "@/assets/css/tailwind.css";
 import VueClipboard from "vue-clipboard2";
+import "@/assets/css/index.css";
 
 Vue.use(VueCompositionApi);
 Vue.use(VueClipboard);
