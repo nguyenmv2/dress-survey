@@ -27,7 +27,7 @@ export default {
       header: "panel-heading card-header",
       body: "panel-body card-block mt-4",
       bodyEmpty: "panel-body card-block mt-4 sv_body_empty",
-      footer: "panel-footer card-footer",
+      footer: "panel-footer card-footer flex justify-around px-12",
       title: "",
       description: "",
       navigationButton: "",
@@ -36,7 +36,7 @@ export default {
         complete: "btn sv_complete_btn",
         prev: "btn sv_prev_btn",
         next: "btn sv_next_btn",
-        start: "btn sv_start_btn"
+        start: "btn sv_start_btn blue-btn self-center"
       },
       progress: "progress center-block mx-auto mb-4",
       progressBar: "progress-bar",
@@ -148,5 +148,11 @@ export default {
   position: absolute;
   right: 0;
   @apply h-full w-full;
+}
+.btn {
+  @apply px-8 py-2 bg-blue text-white font-sans rounded mb-10;
+}
+.btn:hover {
+  @apply border border-blue bg-blue-light text-blue;
 }
 </style>
