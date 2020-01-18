@@ -23,80 +23,18 @@ export default {
     const surveyResult = ref({});
     const css = {
       root: "sv_main sv_bootstrap_css bg-blue-light",
-      container: "sv_container",
-      header: "panel-heading card-header",
       body: "panel-body card-block mt-4",
       bodyEmpty: "panel-body card-block mt-4 sv_body_empty",
       footer: "panel-footer card-footer flex justify-around px-12",
-      title: "",
-      description: "",
-      navigationButton: "",
-      completedPage: "",
       navigation: {
-        complete: "btn sv_complete_btn",
-        prev: "btn sv_prev_btn",
-        next: "btn sv_next_btn",
         start: "btn sv_start_btn blue-btn self-center"
       },
-      progress: "progress center-block mx-auto mb-4",
-      progressBar: "progress-bar",
-      progressTextUnderBar: "sv-hidden",
-      page: {
-        root: "",
-        title: "",
-        description: ""
-      },
-      pageTitle: "",
-      pageDescription: "small",
-      row: "sv_row",
       question: {
-        mainRoot: "sv_qstn",
-        flowRoot: "sv_q_flow sv_qstn",
-        header: "1",
-        headerLeft: "title-left",
-        content: "2",
-        contentLeft: "content-left",
-        titleLeftRoot: "sv_qstn_left",
-        title: "3",
-        number: "sv_q_num",
-        description: "small",
-        descriptionUnderInput: "small",
-        requiredText: "sv_q_required_text",
-        comment: "form-control",
-        required: "4",
-        titleRequired: "py-8 font-serif font-semibold",
-        hasError: "has-error",
-        indent: 20,
-        formGroup: "form-group"
-      },
-      error: {
-        root: "alert alert-danger",
-        icon: "glyphicon glyphicon-exclamation-sign",
-        item: "",
-        locationTop: "sv_qstn_error_top",
-        locationBottom: "sv_qstn_error_bottom"
+        titleRequired: "py-8 font-serif font-semibold"
       },
       imagepicker: {
-        root: "sv_imgsel",
-        item: "sv_q_imgsel",
-        itemChecked: "checked",
         itemInline: "sv_q_imagepicker_inline p-4",
-        label: "sv_q_imgsel_label",
-        itemControl: "sv_q_imgsel_control_item",
-        image: "sv_q_imgsel_image",
-        itemText: "sv_q_imgsel_text font-sans font-semibold",
-        clearButton: "sv_q_radiogroup_clear"
-      },
-      window: {
-        root: "modal-content",
-        body: "modal-body",
-        header: {
-          root: "modal-header panel-title",
-          title: "pull-left",
-          button: "glyphicon pull-right",
-          buttonExpanded: "glyphicon pull-right glyphicon-chevron-up",
-          buttonCollapsed: "glyphicon pull-right glyphicon-chevron-down"
-        }
+        itemText: "sv_q_imgsel_text font-sans font-semibold"
       }
     };
     surveyModel.value.css = css;

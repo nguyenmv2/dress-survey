@@ -744,7 +744,8 @@
               "imageLink": "https://assets.bluetagbridal.com/surveys/no-sleeve.jpg"
             }
           ],
-          "choicesOrder": "asc"
+          "choicesOrder": "asc",
+          "showLabel": true
         }
       ]
     },
