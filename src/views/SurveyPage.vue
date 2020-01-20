@@ -30,7 +30,7 @@ export default {
         start: "btn sv_start_btn blue-btn self-center"
       },
       question: {
-        titleRequired: "py-8 font-serif font-semibold"
+        titleRequired: "py-8 font-serif font-semibold text-lg"
       },
       imagepicker: {
         itemInline: "sv_q_imagepicker_inline p-4",

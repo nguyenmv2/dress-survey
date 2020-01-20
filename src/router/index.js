@@ -1,26 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import SurveyPage from "../views/SurveyPage.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: Home
-  },
-  {
-    path: "/survey",
     name: "survey",
-    component: () =>
-      import(/* webpackChunkName: "survey" */ "../views/SurveyPage.vue")
-  },
-  {
-    path: "/images",
-    name: "images",
-    component: () =>
-      import(/* webpackChunkName: "images" */ "../views/Images.vue")
+    component: SurveyPage
   }
 ];
 
